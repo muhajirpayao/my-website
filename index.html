@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>My </span>Portfolio.</a> 
+        <nav class="navbar">
+            <a href="#" class="active">Portfolio</a>
+            <a href="edu.html">Education</a>
+            <a href="#">Skills</a>
+            <a href="#">About me</a>
+        </nav>
+        <a href="#" class="contact">Contact</a>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>I'ts <span>Muhajir </span> </h1><h3>Your front end <span class="type" id="typing-text"></span></h3>
+            <p>I am really excited to work with your company to enhance my skills and knowledge to build website</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://web.facebook.com/muhajir.payao.1"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-google mail"></i></a>
+            </div>
+            <div class="btn-box">
+                <button class="btn1">Hire Me</button>
+                
+                <a href="PAYAO_COVERLETTER.pdf" download="My_CV">
+                    <button class="btn2">Download CV <i class="fa-solid fa-file-pdf"></i></button>
+                </a>
+                
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="" alt="">
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const text = "Developer";
+            const typingText = document.getElementById("typing-text");
+            let index = 0;
+    
+            function typeEffect() {
+                if (index < text.length) {
+                    typingText.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeEffect, 150); 
+                }
+            }
+    
+            typeEffect();
+        });
+    </script>
+    
+</body>
+</html>
